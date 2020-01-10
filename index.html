@@ -7,6 +7,7 @@
         <meta name="author" content="Rachel Gummow">
         <meta name="description" content="Assignment portal for Rachel Gummow in CIT230: Web Frontend Development at Brigham Young University- Idaho">
         <link href="style.css" rel="stylesheet">
+        <script type="text/javascript">
     </head>
     <header>
         <h1>Rachel Gummow</h1>
@@ -36,10 +37,25 @@
     </main>
     <footer>
         &copy; 2020 | Rachel Gummow | <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho
-        n = new Date();
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        d = n.getDate();
-        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-    </footer>
+        function name(startTime) {
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            // add a zero in front of numbers<10
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+            t=setTimeout('startTime()',500);
+            }
+            function checkTime(i)
+            {
+            if (i<10)
+            {
+            i="0" + i;
+            }
+            return i;
+            }
+        </script>
+   </footer>
 </html>
