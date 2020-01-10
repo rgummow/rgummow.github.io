@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
 
-nav {
+main {
     padding-top: 100px;
   background: navy;
   font-family: 'Raleway', sans-serif;
@@ -26,9 +26,7 @@ a {
 }
 img{
     position: absolute;
-    right: 150px;
-    width: 200px;
-    height: 120px;
+    right: 400px;
     border: 3px solid whitesmoke;
 }
 
