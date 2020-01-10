@@ -26,6 +26,10 @@ a {
     color: whitesmoke;
 }
 
+img {
+    justify:left;
+}
+
 main {
     justify: left;
     max-width: 50%;
@@ -40,4 +44,8 @@ footer {
     background-color: navy;
     color: white;
     text-align: center;
+}
+
+p {
+    font-family: 'Ibarra Real Nova', serif;
 }
