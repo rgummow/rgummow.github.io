@@ -36,7 +36,6 @@ main {
 }
 
 footer {
-    font-family: 'Raleway', sans-serif;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -47,5 +46,5 @@ footer {
 }
 
 p {
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Raleway', sans-serif;
 }
