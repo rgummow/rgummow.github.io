@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
 
-main {
+main, img {
     padding-top: 100px;
   background: navy;
   font-family: 'Raleway', sans-serif;
