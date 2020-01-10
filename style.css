@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
 
+
 nav {
     padding-top: 100px;
   background: rgb(28, 197, 28);
@@ -24,6 +25,11 @@ a:visited {
     color: whitesmoke;
 }
 
+main {
+    justify: left;
+    max-width: 50%;
+}
+
 footer {
-    font-family: 
+    font-family: 'Ibarra Real Nova', serif;
 }
