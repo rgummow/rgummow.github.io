@@ -33,4 +33,11 @@ main {
 
 footer {
     font-family: 'Ibarra Real Nova', serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    text-align: center;
 }
