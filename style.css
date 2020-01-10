@@ -24,14 +24,12 @@ h6 {
 a {
     color: whitesmoke;
 }
-
-img {
-    text-align:left;
-}
-
-main {
-    justify: left;
-    max-width: 50%;
+img{
+    position: absolute;
+    left: 150px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid whitesmoke;
 }
 
 footer {
