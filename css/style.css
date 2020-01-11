@@ -41,8 +41,10 @@ a {
 }
 
 img {
-    align-self: center;
-    width: 30%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20%;
     border: 3px solid whitesmoke;
 }
 
