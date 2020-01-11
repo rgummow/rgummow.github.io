@@ -41,7 +41,7 @@ a {
 }
 
 img {
-    position: absolute;
+    position: fixed;
     top: 35 px;
     right: 130px;
     width: 30%;
