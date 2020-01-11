@@ -37,16 +37,12 @@ h1, h2{
 a {
     color:navy;
 }
-img{
-    position: absolute;
-    justify-content: right;
-    border: 3px solid whitesmoke;
-}
+
 img.center{
     display:block;
-    margin-left: auto;
-    margin-right:auto;
+    position:absolute;
     float: right;
+    border: 3px solid whitesmoke;
 }
 
 footer {
