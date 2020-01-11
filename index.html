@@ -37,6 +37,11 @@
     </main>
     <footer>
         <p>&copy; 2020 | Rachel Gummow | <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho</p>
-        Current Date Derived: <span id="currentdate"></span>
+        Current Date: <span id="currentdate"></span>
     </footer>
+    <script>
+     //toLocaleDateString
+     const options = {weekday: 'long', day:'numeric', month:'long', year: 'numeric'};
+     document.getElementById('currentdate').textContent= new Date().toLocaleDateString('en-us', options);
+    </script>
 </html>
