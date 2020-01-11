@@ -38,7 +38,7 @@ a {
     color:navy;
 }
 
-img.center{
+img {
     display:block;
     position:absolute;
     float: right;
