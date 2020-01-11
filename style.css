@@ -46,7 +46,7 @@ img.center{
     display:block;
     margin-left: auto;
     margin-right:auto;
-    right:0;
+    float: right;
 }
 
 footer {
