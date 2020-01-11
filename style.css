@@ -10,6 +10,7 @@ main, nav {
   color: navy;
   line-height: 26px;
   padding: 10px;
+  column-count: 2;
 }
 
 main {
