@@ -4,10 +4,10 @@
 
 main, img {
     padding-top: 100px;
-  background:whitesmoke;
+  background-color:whitesmoke;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  color: #fff;
+  color: navy;
   line-height: 26px;
   padding: 0;
   column-count: 1;
