@@ -12,18 +12,12 @@ main, nav {
   padding: 10px;
 }
 
-img {
-    display:block;
-    position:absolute;
-    float: right;
-    border: 3px solid whitesmoke;
-}
-
 main {
     width: 800px;
   height: 550px;
   margin: 0px auto;
   margin-top:-5px;
+  column-count: 2;
 }
 
 h1,
@@ -42,6 +36,13 @@ h1, h2{
 
 a {
     color:navy;
+}
+
+img {
+    display:block;
+    position:absolute;
+    float: right;
+    border: 3px solid whitesmoke;
 }
 
 footer {
