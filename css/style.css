@@ -17,6 +17,9 @@ main {
   height: 550px;
   margin: 0px auto;
   margin-top:-5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 h1,
@@ -38,9 +41,8 @@ a {
 }
 
 img {
-    display:block;
-    position:absolute;
-    float: right;
+    align-self: center;
+    width: 30%;
     border: 3px solid whitesmoke;
 }
 
