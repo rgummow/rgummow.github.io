@@ -17,7 +17,6 @@ main {
   height: 550px;
   margin: 0px auto;
   margin-top:-5px;
-  column-count: 2;
 }
 
 h1,
@@ -39,12 +38,8 @@ a {
 }
 img{
     position: absolute;
-    justify-content: right;
-    border: 3px solid whitesmoke;
-}
-img.center{
-    display:block;
     float: right;
+    border: 3px solid whitesmoke;
 }
 
 footer {
