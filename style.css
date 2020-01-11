@@ -62,6 +62,6 @@ p a {
     color: whitesmoke;
 }
 
-#currentdate, #lastmodified {
+span {
     color: whitesmoke;
 }
