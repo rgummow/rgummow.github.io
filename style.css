@@ -41,6 +41,11 @@ img{
     justify-content: right;
     border: 3px solid whitesmoke;
 }
+img.center{
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+}
 
 footer {
     position: fixed;
