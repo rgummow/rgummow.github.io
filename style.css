@@ -9,13 +9,12 @@ main {
   font-weight: 400;
   color: navy;
   line-height: 26px;
-  padding: 0;
+  padding: 10px;
 }
 
 main {
     width: 800px;
   height: 550px;
-  margin: 0px auto;
   margin-top:-5px;
 }
 
