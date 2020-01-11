@@ -28,4 +28,6 @@ const dayName= dayNames [todaysdate.getDay()];
 const monthName= months [todaysdate.getMonth()];
 const year = todaysdate.getFullYear;
 const currentdate = dayName +"," + todaysdate.getDate() + " " + monthName + "," + todaysdate.getFullYear();
+const lastmodified = dayName +"," + todaysdate.getDate() + " " + monthName + "," + todaysdate.getFullYear();
 document.getElementById('currentdate').textContent= currentdate;
+document.lastModified('lastmodified').textContent= lastmodified;
