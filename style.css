@@ -13,6 +13,13 @@ main, nav {
   column-count: 2;
 }
 
+img {
+    display:block;
+    position:absolute;
+    float: right;
+    border: 3px solid whitesmoke;
+}
+
 main {
     width: 800px;
   height: 550px;
@@ -36,13 +43,6 @@ h1, h2{
 
 a {
     color:navy;
-}
-
-img {
-    display:block;
-    position:absolute;
-    float: right;
-    border: 3px solid whitesmoke;
 }
 
 footer {
