@@ -2,19 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
 
-main {
+main, img {
     padding-top: 100px;
   background-color:whitesmoke;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: navy;
   line-height: 26px;
-  padding: 10px;
+  padding: 0;
 }
 
 main {
     width: 800px;
   height: 550px;
+  margin: 0px auto;
   margin-top:-5px;
 }
 
