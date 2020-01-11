@@ -62,3 +62,8 @@ p {
 p a {
     color: whitesmoke;
 }
+
+span {
+    color:whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
