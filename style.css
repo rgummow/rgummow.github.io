@@ -11,7 +11,10 @@ main, img {
   line-height: 26px;
   padding: 0;
   column-count: 2;
-  width: 800px;
+}
+
+main {
+    width: 800px;
   height: 550px;
   margin: 0px auto;
   margin-top:-5px;
