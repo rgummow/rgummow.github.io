@@ -56,13 +56,9 @@ footer {
 
 p {
     font-family: 'Raleway', sans-serif;
+    color:whitesmoke;
 }
 
 p a {
     color: whitesmoke;
-}
-
-p span {
-    color:whitesmoke;
-    font-family: 'Raleway', sans-serif;
 }
