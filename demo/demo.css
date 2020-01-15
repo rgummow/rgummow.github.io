@@ -1,0 +1,40 @@
+/* Imports are always first */
+@import url("/css/normalize.css");
+
+/* General Rules that apply to all devices */
+
+html *{
+    box-sizing:border-box;
+}
+
+*::before, * ::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px; /* 1em or 1rem */
+}
+
+/* Mobile Rules Next */
+#wrapper{
+    width: 100%;
+    background-color: yellow;
+}
+
+/* Larger Screen Rules */
+@media screen and (min-width: 680px){
+    #wrapper{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1300px;
+        background-color: wheat;
+        font-size: 4vw; /* viewport width */
+    }
+    #navList{
+        display: flex;
+        list-style: none; /* get rid of all bullets in list */
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}
