@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
+
+@import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
+
+main {
+  padding-top: 100px;
+  background-color:whitesmoke;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: navy;
+  line-height: 26px;
+  padding: 10px;
+  width: 800px;
+  height: 2300px;
+  margin: 0px auto;
+  margin-top:-5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1, h2{
+    font-family: 'Boogaloo', cursive;
+    color: navy;
+}
+h3{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+a {
+    color:navy;
+}
+
+footer {
+    position: fixed;
+    bottom: -10px;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+p a {
+    color: whitesmoke;
+}
+
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	section:nth-child(2) {
+		display: block;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
