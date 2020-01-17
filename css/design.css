@@ -1,7 +1,10 @@
+/* 1. Imports */
+
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
 
 @import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
 
+/* Generic Styles (screen-size independent) */
 main {
   padding-top: 100px;
   background-color:whitesmoke;
@@ -10,10 +13,12 @@ main {
   color: navy;
   line-height: 26px;
   padding: 10px;
-  width: 800px;
-  height: 2300px;
+  /* width: 800px; */
+  /* height: 2300px; */
   margin: 0px auto;
   margin-top:-5px;
+  display: grid;
+  gap: 1em;
 }
 
 h1,
@@ -34,13 +39,15 @@ h3{
     font-size: 2.5em;
 }
 
+img{
+    max-width: 100%;
+}
+
 a {
     color:navy;
 }
 
 footer {
-    position: fixed;
-    bottom: -10px;
     width: 100%;
     background-color: navy;
     color: white;
@@ -55,36 +62,17 @@ p a {
     color: whitesmoke;
 }
 
-@media only screen and (min-width: 37.5em) {
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	section:nth-child(2) {
-		display: block;
-	}
-
-	section:nth-child(3) {
-		grid-column: span 2;
-	}
-
-	main picture {
-		display: block;
-	}
-	main section picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
+/* Mobile Styles */
+main{
+    grid-template-columns: 1fr;
 }
 
-/* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-
-	section:nth-child(3) {
-		grid-column: span 1;
-	}
+/* Larger Screen Styles */
+@media screen and (min-width: 768px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h3{
+        grid-column: 1 / 4;
+    }
 }
