@@ -5,7 +5,21 @@
 @import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
 
 /* Generic Styles (screen-size independent) */
-main {
+
+ul li {
+    display: block;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: center;
+}
+
+main, li a {
   padding-top: 100px;
   background-color:whitesmoke;
   font-family: 'Raleway', sans-serif;
@@ -17,8 +31,12 @@ main {
   /* height: 2300px; */
   margin: 0px auto;
   margin-top:-5px;
-  display: grid;
-  gap: 1em;
+}
+
+main{
+    display: grid;
+    gap: 1em;
+    padding-bottom: 170px;
 }
 
 h1,
@@ -40,7 +58,8 @@ h3{
 }
 
 img{
-    max-width: 100%;
+    width: 100px;
+    height: 100px;
 }
 
 a {
@@ -48,6 +67,8 @@ a {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     background-color: navy;
     color: white;
@@ -66,14 +87,34 @@ p a {
 main{
     grid-template-columns: 1fr;
 }
+@media screen and (max-width:320px){
+    #resize{
+        width:150px;
+        height:100px;
+    }
+    ul li{
+        margin: 1em;
+    }
+}
 
 /* Larger Screen Styles */
 @media screen and (min-width: 768px){
+    h2{
+        text-align: center;
+        font-size: 32px;
+        grid-column: 1 / 4;
+    }
     main{
         grid-template-columns: 1fr 1fr 1fr;
-        justify-self: center;
+        text-align: center;
     }
-    h3{
+    main img{
+        width: 1000px;
+        height:500px;
+        justify-self: center;
         grid-column: 1 / 4;
+    }
+    ul li{
+        display: inline;
     }
 }
