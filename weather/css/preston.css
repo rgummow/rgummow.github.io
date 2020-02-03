@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
+/* Change box model */
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*General Styles*/
 header{
     font-family: 'Oswald', sans-serif; 
     background-color: white;
     color: #1B00B1;
     display:flex;
     width: 100%;
+}
+
+header img{
+    width: 100px;
+    height:100px;
 }
 
 h2{
@@ -17,6 +34,9 @@ h2{
 nav{
     background-color: #EBDDFE;
     width:100%;
+    margin: 0 auto;
+    max-width: 760px;
+    padding: 20px;
 }
 
 ul{
@@ -27,9 +47,24 @@ ul{
     padding: 20px;
 }
 
+h3{
+    font-size:14px;
+    font-family: 'Oswald', sans-serif; 
+    border: 1px solid #1B00B1;
+    color: #EB7E68;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+div{
+    margin:20px;
+}
+
 a:link{
     text-decoration: none;
     color:  #EB7E68;
+    justify-content: space-evenly;
 }
 
 a:visited{
@@ -50,22 +85,95 @@ a:hover{
     color: #FFF9E8;
 }
 
-header img{
-    width: 100px;
-    height:100px;
-}
-
 main{
     background-color: whitesmoke;
 }
 
+p{
+    color: #EB7E68;
+    font-family: 'Oswald', sans-serif; 
+}
+
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
+    margin-bottom: 90px;
     background-color: #EBDDFE;
     width: 100%;
     font-family: 'Oswald', sans-serif; 
     text-align: center;
     color: #EB7E68;
     padding: 10px;
+}
+
+/*Mobile Rules*/
+@media screen and (max-width: 360px){
+    nav {
+        margin: 0 auto;
+        max-width: 760px;
+        background-color: #EBDDFE;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+/*Large Screen Rules*/ 
+@media and screen and (min-width:768px){
+    
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+    background-color: #EBDDFE;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #EB7E68;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: #fff;
+	background-color: #1B00B1;
+	font-weight: 700;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+    
+    .navigation {
+        display: flex;
+	}
+	.navigation li {
+		display: block; /* needed because of state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: #EB7E68;
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
 }

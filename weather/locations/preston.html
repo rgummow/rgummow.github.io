@@ -14,31 +14,36 @@
         <h1>Happy Weather</h1>
         <h2>Adapt to any weather!</h2>
     </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Preston</a>
-            </li>
-            <li>
-                <a href="#">Soda Springs</a>
-            </li>
-            <li>
-                <a href="#">Favorites</a>
-            </li>
-            <li>
-                <a href="#">Menu</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-    </main>
-    <footer>
-        <p>&copy; <span id="copyrightyear"></span> | Rachel Gummow | <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho</p>
-        <p>Current Date: <span id="currentdate"></span></p>
-        <p>Last Updated: <span id="lastmodified"></span></p>
-    </footer>
-    <script src="/rgummow.github.io/js/date.js"></script>
+        <nav>
+            <ul class="navigation">
+                    <li><a class="ham" href="#">&#9776; Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Favorites</a></li>
+            </ul>
+            <script src="/rgummow.github.io/weather/js/menu.js"></script>
+        </nav>
+        <main>
+            <div>
+                <h3>Preston, Idaho <p> GPS: 42°5'43"N, 111°52'31"</p></h3>
+            </div>
+            <div>
+                <h3>Current Conditions</h3>
+            </div>
+            <div>
+                <h3>Temperatures</h3>
+            </div>
+            <div>
+                <h3>Precipitation</h3>
+            </div>
+            <div>
+                <h3>Conditions</h3>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="copyrightyear"></span> | Rachel Gummow | <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho</p>
+            <p>Current Date: <span id="currentdate"></span></p>
+        </footer>
+        <script src="/rgummow.github.io/js/date.js"></script>
 </html>
