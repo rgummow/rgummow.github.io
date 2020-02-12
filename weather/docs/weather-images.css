@@ -1,0 +1,54 @@
+
+main picture.clear img {
+    width:50%;
+}
+
+main picture.clear{
+    width: 50%;
+    margin: 0 0 0 2%;
+}
+
+main picture.clouds img {
+    width: 50%;
+}
+
+main picture.clouds {
+    width: 50%;
+    margin: 0 0 0 2%;
+}
+
+main picture.fog img{
+    width:50%;
+}
+
+main picture.fog{
+    width:50%;
+    margin: 0 0 0 2%;
+}
+
+main picture.rain img{
+    width:50%;
+}
+
+main picture.rain{
+    width:50%;
+    margin: 0 0 0 2%;
+}
+
+main picture.snow img{
+    width:50%;
+}
+
+main picture.snow{
+    width:50%;
+    margin: 0 0 0 2%;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }

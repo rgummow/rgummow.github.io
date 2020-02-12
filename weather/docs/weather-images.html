@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <title>Progressive Loading</title>
+        <meta name="author" content="Rachel Gummow">
+        <meta name="description" content="Progressive Loading of Images in CIT230: Web Frontend Development">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="weather-images.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Progressive Loading of Images</h1>
+        </header>
+        <main>
+
+            <picture class="clear">
+                <img src="img/placeholder.jpg" data-src="img/clear0.jpg" alt="sunny">
+            </picture>
+            <picture class="clouds">
+                <img src="img/placeholder.jpg" data-src="img/clouds0.jpg" alt="cloudy">
+            </picture>
+            <picture class="fog">
+                <img src="img/placeholder.jpg" data-src="img/fog0.jpg" alt="foggy">
+            </picture>
+            <picture class="rain">
+                <img src="img/placeholder.jpg" data-src="img/rain0.jpg" alt="rainy">
+            </picture>
+            <picture class="snow">
+                <img src="img/placeholder.jpg" data-src="img/snow0.jpg" alt="snowy">
+            </picture>
+        </main>
+        <script src="weather-images.js"></script>
+    </body>
+</html>
