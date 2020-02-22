@@ -99,6 +99,14 @@ div{
       border-radius: 90%;
       align-self: center;
   }
+
+  .ball {
+    height: 23px;
+    width: 23px;
+    border-radius: 100%;
+    background-color: orangered;
+    color: transparent;
+   }
   
   .symbol{
       height: 100%;
@@ -110,6 +118,12 @@ div{
       color: #EB7E68;
   }
   
+  #curWeather {
+    background-size: cover;
+   }
+
+
+
   .numbers {
     list-style:none; 
     padding:0;
@@ -219,9 +233,13 @@ div{
 
 main{
     background-color: whitesmoke;
-    display:grid;
     justify-content: center;
     margin:0;
+}
+
+#curWeather{
+    display: grid;
+    justify-items: center;
 }
 
 a:link{
@@ -275,8 +293,10 @@ footer{
         bottom: 0;
         z-index: 1;
     }
-    main{
+
+    #curWeather{
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .current{
@@ -302,7 +322,9 @@ footer{
 
 /*Large Screen Rules*/ 
 @media screen and (min-width:768px){
-    
+    #curWeather{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 nav {
@@ -345,7 +367,7 @@ nav {
 
 /* Media Query for medium + screens */
 @media only screen and (min-width: 32.5em) {
-    
+
     .navigation {
         display: flex;
 	}
