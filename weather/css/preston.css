@@ -14,7 +14,7 @@ html{
 /*General Styles*/
 header{
     font-family: 'Oswald', sans-serif; 
-    background-color: white;
+    background-color: whitesmoke;
     color: #1B00B1;
     display:flex;
     width: 100%;
@@ -38,6 +38,10 @@ nav{
     /* padding: 5px; */
 }
 
+.hide{
+    display: none;
+  }
+
 .navigation{
     list-style: none;
     display:flex; 
@@ -47,10 +51,14 @@ nav{
 }
 
 h3{
-    font-size:16px;
+    font-size:20px;
     font-family: 'Oswald', sans-serif; 
-    color: #EB7E68;
+    color: black;
     text-align: center;
+    padding: 10px;
+    margin-top:0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .temperature h3{
@@ -66,11 +74,6 @@ h3{
 .conditions h3{
     margin:50px;
     margin-top: 0;
-}
-
-
-div{
-    margin:20px;
 }
 
 #outerComponent {
@@ -95,7 +98,7 @@ div{
   .inner{
       width: 150px;
       height: 150px;
-      background-color: whitesmoke;
+      background-color:grey;
       border-radius: 90%;
       align-self: center;
   }
@@ -115,71 +118,72 @@ div{
       justify-content: center;
       align-items: center;
       font-size: 3.5em;
-      color: #EB7E68;
+      color: black;
   }
   
   #curWeather {
     background-size: cover;
+    margin: 0;
    }
-
-
 
   .numbers {
     list-style:none; 
     padding:0;
     position: absolute;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif; 
   }
   
   .numbers li{
-    color: #EB7E68;
+    color: black;
     position: absolute;
   }
   
-  .one{
+  .i1 {
     transform: translate(35px,-5px);
   }
   
-  .two{
+  .i2 {
       transform: translate(65px,22px);
   }
   
-  .three{
+  .i3 {
       transform: translate(85px,70px);
   }
   
-  .four{
+  .i4 {
       transform: translate(72px,120px);
   }
   
-  .five{
+  .i5 {
       transform: translate(38px,153px);
   }
   
-  .six{
+  .i6 {
       transform: translate(-3px,163px);
   }
   
-  .seven{
+  .i7 {
       transform: translate(-47px,153px);
   }
   
-  .eight{
+  .i8 {
       transform: translate(-80px,120px);
   }
   
-  .nine{
+  .i9 {
       transform: translate(-90px,70px);
   }
   
-  .ten{
+  .i10 {
       transform: translate(-80px,26px);
   }
   
-  .eleven{
+  .i11 {
       transform: translate(-45px,-3px);
   }
   
-  .twelve{
+  .i12 {
       transform: translate(-6px,-10px);
   }
   
@@ -244,7 +248,7 @@ main{
 
 a:link{
     text-decoration: none;
-    color:  #EB7E68;
+    color:  black;
     justify-content: space-evenly;
 }
 
@@ -267,7 +271,7 @@ a:hover{
 }
 
 p{
-    color: #EB7E68;
+    color: black;
     font-family: 'Oswald', sans-serif; 
     font-size: 18px;
 }
@@ -280,7 +284,7 @@ footer{
     width: 100%;
     font-family: 'Oswald', sans-serif; 
     text-align: center;
-    color: #EB7E68;
+    color: black;
     padding: 10px;
 }
 
@@ -305,25 +309,60 @@ footer{
 
     .temperature{
         margin: 80px;
-        margin-top:0;
+        margin-top:10px;
     }
 
     .precipitation{
         margin:80px;
-        margin-top:0;
+        margin-top:10px;
     }
 
     .conditions{
         margin:80px;
-        margin-top:0;
+        margin-top:10px;
+    }
+/* background pictures for summary */
+    .clear {
+         background-image: url("/rgummow.github.io/weather/docs/img/clear1.jpg");
     }
 
+    .rain {
+        background-image: url("/rgummow.github.io/weather/docs/img/rain1.jpg");
+    }
+
+    .fog {
+        background-image: url("/rgummow.github.io/weather/docs/img/fog1.jpg");
+    }
+
+    .snow {
+        background-image: url("/rgummow.github.io/weather/docs/img/snow1.jpg");
+    }
+
+    .clouds{
+        background-image:url("/rgummow.github.io/weather/docs/img/clouds1.jpg");
+    }
 }
 
 /*Large Screen Rules*/ 
 @media screen and (min-width:768px){
     #curWeather{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .clear {
+        background-image: url("/rgummow.github.io/weather/docs/img/clear2.jpg");
+    }
+    .rain {
+        background-image: url("/rgummow.github.io/weather/docs/img/rain2.jpg");
+    }
+    .fog {
+        background-image: url("/rgummow.github.io/weather/docs/img/fog2.jpg");
+    }
+    .clouds {
+        background-image:url("/rgummow.github.io/weather/docs/img/clouds2.jpg");
+    }
+
+    .snow {
+        background-image: url("/rgummow.github.io/weather/docs/img/snow2.jpg");
     }
 }
 
@@ -343,7 +382,7 @@ nav {
 }
 .navigation a {
 	display: block;
-	color: #EB7E68;
+	color: black;
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
@@ -376,7 +415,7 @@ nav {
 		flex: 1 1 100%;
 	}
 	.navigation li a {
-		color: #EB7E68;
+		color: black;
 		text-align: center;
 	}
 	
