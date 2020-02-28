@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let hour="3";
     timeBall(hour);
     //Implement the current weather background image
-    let condition ="rain";
+    let condition ="snow";
     changeSummaryImage(condition);
     //Get weather json data
     // let weatherURL = "/rgummow.github.io/weather/js/idahoweather.json";
