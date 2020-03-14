@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
-        <title id="page-title">Preston Town | The Weather Site</title>
+        <title id="page-title">Soda Springs, ID | The Weather Site</title>
         <meta name="author" content="Rachel Gummow">
-        <meta name="description" content="Preston Town Page in CIT230: Web Frontend Development">
+        <meta name="description" content="Soda Springs Town Page in CIT230: Web Frontend Development">
         <link rel="stylesheet" href="/rgummow.github.io/css/normalize.css">
         <link href="/rgummow.github.io/weather/css/preston.css" rel="stylesheet">
     </head>
@@ -18,23 +18,25 @@
         <ul class="navigation">
                 <li><a class="ham" href="#">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
+                <li><a href="/rgummow.github.io/weather/locations/preston.html">Preston</a></li>
+                <li><a href="/rgummow.github.io/weather/locations/sodasprings.html">Soda Springs</a></li>
                 <li><a href="#">Favorites</a></li>
         </ul>
         <!-- <script src="/rgummow.github.io/weather/js/menu.js"></script> -->
     </nav>
-    <body id="preston" data-city="Preston">
-        <section id="status">Please be patient while I get your weather information.</section>
-        <main id="main-content" class="hide">
+    <body id="preston" data-city="Soda Springs">
+        <main id="main-content">
             <div class="location">
-                <h3>Preston, Idaho <p> GPS: 42°5'43"N, 111°52'31"</p></h3>
+                <h3>Soda Springs, Idaho <p> GPS: </p></h3>
             </div>
             <div id="curWeather">
                 <section class="current">
-                    <h3>Current Conditions <p> 51&#8457;</p></h3>
-                    <p id="feelTemp">Feels Like:  </p>
-                    <!-- <p> Hi Lo</p> -->
+                    <p id="high" class="hide"><span>15</span>&deg;F</p>
+                    <h3 id="temp"><span>10</span>&deg;F</h3>
+                    <p id="low" class="hide"><span>-5</span>&deg;F</p>
+                    <p id="feels-like"><span id="feelTemp"></span></p>
+                    <p id="windSpeed" class="wind hide"><span id="speed">36</span>mph</p>
+                    <p id="windGust" class="wind hide">Gusts: <span id="gusting">18</span>mph</p>
                 </section>
                 <section class="temperature">
                     <h3>Temperatures</h3>
@@ -155,5 +157,5 @@
         </footer>
         <script src="/rgummow.github.io/weather/js/functions.js"></script>
         <!-- <script src="/rgummow.github.io/js/date.js"></script> -->
-    </bodyid="prestion">
+    </bodyid="preston">
 </html>

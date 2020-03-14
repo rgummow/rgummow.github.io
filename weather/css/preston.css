@@ -76,6 +76,10 @@ h3{
     margin-top: 0;
 }
 
+#condition img{
+    max-width: 40%;
+  }
+
 #outerComponent {
     position: absolute;
     margin:75px;
@@ -83,7 +87,7 @@ h3{
     width: 300px;
     height: 300px;
   } 
-  
+
   .component{
       width: 200px;
       height: 200px;
@@ -303,8 +307,17 @@ footer{
         justify-items: center;
     }
 
+    .hide{
+        display: none;
+    }
+
     .current{
         margin-top:0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 10px;
     }
 
     .temperature{
@@ -341,6 +354,44 @@ footer{
     .clouds{
         background-image:url("/rgummow.github.io/weather/docs/img/clouds1.jpg");
     }
+    
+    .tile {
+        width: 90%;
+    }
+
+    #temp {
+        font-size: 4em;
+        margin: 0;
+        order: -1;
+        width: 100%;
+        display: block;
+    }
+    
+    #high {
+        color: var(--high-color);
+        font-size: 1.5em;
+        margin-right: 10px;
+    }
+    
+    #low {
+        color: var(--low-color);
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+    
+    #windSpeed {
+        width: 100%;
+        font-size: 1.25em;
+    }
+    
+    #feels-like {
+        display: none;
+    }
+    
+    #windGust {
+        display: none;
+    }
+
 }
 
 /*Large Screen Rules*/ 
@@ -363,6 +414,55 @@ footer{
 
     .snow {
         background-image: url("/rgummow.github.io/weather/docs/img/snow2.jpg");
+    }
+    .tile {
+        width: 416px;
+        margin: 0;
+        height: max-content;
+    }
+    
+    /* style the current temperature tile */
+    .current {
+        width: 1235px;
+        margin: auto;
+        margin-bottom: 10px;
+        height: auto;
+        align-self: center;
+    }
+    
+    #temp {
+        font-size: 6em;
+        margin: 0em;
+        display: inline;
+        padding: .7em;
+    }
+    
+    #high {
+        color: var(--high-color);
+        display: inline;
+        font-size: 2.5em;
+        position: relative;
+        top: -.7em;
+    }
+    
+    #low {
+        color: var(--low-color);
+        display: inline;
+        font-size: 2.5em;
+        position: relative;
+        top: -.7em;
+    }
+    
+    #feels-like {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+    
+    .wind {
+        display: inline;
+        font-size: 1.5em;
+        margin: 2em;
     }
 }
 
@@ -437,8 +537,13 @@ nav {
 
     .current{
         /* border: 1px solid #1B00B1; */
-        grid-column: 1/4;
+        grid-column: 2/3;
         margin-top: 0;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+        height: auto;
+        align-content: center;
     }
     
     .temperature{
@@ -461,4 +566,46 @@ nav {
         margin: 75px;
         margin-top:0;
     }
+    .tile {
+        width: 32%;
+        margin: 0;
+        height: fit-content;
+        justify-content: center;
+    }
+    
+    /* style the current temperature*/
+    #temp {
+        font-size: 6em;
+        margin: 0em;
+        display: inline;
+        padding: .7em;
+    }
+    
+    #high {
+        color: var(--high-color);
+        display: inline;
+        font-size: 2.5em;
+        position: relative;
+        top: -.7em;
+    }
+    
+    #low {
+        color: var(--low-color);
+        display: inline;
+        font-size: 2.5em;
+        position: relative;
+        top: -.7em;
+    }
+    
+    #feels-like {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+    
+    .wind {
+        display: inline;
+        font-size: 1.5em;
+        margin: 2em;
+    }    
 }
